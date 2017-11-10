@@ -6,12 +6,14 @@
   <property name="src" location="src"/>
   <property name="build" location="build"/>
   <property name="dist" location="dist"/>
+  
 
   <target name="init">
     <!-- Create the time stamp -->
     <tstamp/>
     <!-- Create the build directory structure used by compile -->
     <mkdir dir="${build}"/>
+     <mkdir dir="${build}/javadoc"/>
   </target>
 
   <target name="compile" depends="init"
